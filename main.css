@@ -1,0 +1,261 @@
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+.navbar {
+    background-color: whitesmoke;
+    width: 100%;
+    font-size: 3rem;
+    height: 10rem;
+    font-family: Poppins, sans-serif;
+    font-weight: bolder;
+}
+.logo {
+    float: left;
+    margin-left: 1rem;
+}
+.logo img {
+    height: 5rem;
+    margin-top: 2rem;
+}
+.menu {
+    float: right;
+    margin-right: 1rem;
+    line-height: 10rem;
+}
+.menu a {
+    text-decoration: none;
+    color: #0F2080;
+    padding: 1rem 2rem;
+}
+.menu a:hover {
+    color: orange;
+}
+.content1 {
+    font-size: 2.9rem;
+    width: 50%;
+    float: left;
+    padding: 2rem 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#joinCommunity {
+    background-color: rgb(255, 166, 0);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 2.9rem;
+    margin-top: 1.5rem;
+    width: 55%;
+}
+#joinCommunity a {
+    text-decoration: none;
+    color: #00004D;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#joinCommunity:hover {
+  -webkit-transform: scale(1.1);
+}
+.img1 {
+    float: right;
+}
+.img1 img {
+    height: 50rem;
+    margin-top:2rem;
+}
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 5.3rem;
+    font-weight: 3.2rem;
+    color: goldenrod;
+    font-family: Poppins, sans-serif;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    overflow: auto;
+}
+table {
+    margin: 1rem 6rem;
+    background-color:antiquewhite;
+    border-radius: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+td {
+    font-size: 3.2rem;
+    width: 48%;
+    text-align: justify;
+    padding: 3rem 3rem;
+}
+#img5 {
+    height: 30rem;
+    width: 50rem;
+    translate: 8rem 0 0;
+}
+#img6 {
+    height:40rem;
+    width:55rem;
+    translate: 0 -2rem 0;
+}
+#img7 {
+    height: 30rem;
+    width: 50rem;
+    translate: 4rem 0 0;
+}
+#img8 {
+    height:40rem;
+    width: 55rem;
+    translate: 0 -2rem 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    align-items: stretch;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    translate: 13rem;
+}
+.mycard {
+    position: relative;
+    height: auto;
+    padding: 5rem 2rem;
+    background: #ff0;
+    border-radius: 1rem;
+    border: 0.4rem solid #fff;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
+    animation: animate 5s linear infinite;
+    overflow: hidden;
+}
+.mycard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    transform: skewx(-5deg);
+    background: rgba(255, 255, 255, 0.2);
+}
+  
+.mycard:nth-child(1) {
+    background: rgb(136, 187, 242);
+}
+  
+.mycard:nth-child(2) {
+    background: rgb(255, 205, 111) ;
+}
+  
+.mycard:nth-child(3) {
+    background: rgb(136, 187, 242);
+}
+.mycard .image {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem auto;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.mycard .image img {
+    width: 100%;
+    height: auto;
+}
+  
+.mycard .text {
+    position: relative;
+    color: black;
+    font-size: 1.8rem;
+    padding-top: 5rem;
+}
+  
+.mycard .text::before {
+    content: "\f10d";
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    font-family: FontAwesome;
+    font-size: 6rem;
+    color: rgba(255, 255, 255, 0.5);
+    transform: translatex(-50%);
+}
+  
+.mycard .details {
+    text-align: center;
+}
+  
+.mycard .details h2 {
+    position: relative;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    z-index: 1;
+}
+  
+.mycard .details h2 span {
+    font-size: 2rem;
+}
+@keyframes animate
+{
+    0%
+    {
+      background-position: 0 0;
+    }
+    100%
+    {
+      background-position: 0 -196px;
+    }
+}
+footer {
+    background-color: rgb(132, 184, 240);
+    width: 100vw;
+    text-align:center;
+    font-family: Poppins, sans-serif;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    color: white;
+    padding: 2rem;
+    overflow: auto;
+}
+.icon-bar a {
+    display: inline-block;
+    text-align: center;
+    padding: 1.6rem;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 2rem;
+  }
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+@media(max-width:768px) {
+    html {
+        font-size: 35%;
+    }
+    .grid {
+        translate: 0 0 0;
+    }
+}
+@media(min-width:768px) and (max-width:998px) {
+    html {
+        font-size: 45%;
+    }
+    .grid {
+        translate: 0 0 0;
+    }
+}
+@media(min-width:998px) and (max-width:1200px) {
+    html {
+        font-size: 49%;
+    }
+    .grid {
+        translate: 0 0 0;
+    }
+}
